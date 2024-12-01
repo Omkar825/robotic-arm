@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">RoboticArm</div>
@@ -44,8 +45,8 @@
     <!-- Project Details Section -->
     <main>
         <section id="overview" class="section">
-            <h2>About the Project</h2>
-            <p>This project develops a dual-mode robotic arm
+            <h2 class="heading-color">About the Project</h2>
+            <p class="section1">This project develops a dual-mode robotic arm
                 that can be controlled manually with precision or operated
                 automatically using deep learning for object detection. The
                 system enhances flexibility and efficiency, making it valuable
@@ -53,18 +54,18 @@
         </section>
         
         <section id="components" class="section bg-light">
-            <h2>Key Features</h2>
+            <h2 class="heading-color">Key Features</h2>
             <div class="card-container">
                 <div class="card">
-                    <h3>Mimic Control</h3>
-                    <p>In this mode, the user
+                    <h3 class="color">Mimic Control</h3>
+                    <p class="section1">In this mode, the user
                         manually directs the robotic arm using a smaller,
                         hand-operated arm equipped with potentiometers.
                         The potentiometers capture position and motion data.</p>
                 </div>
                 <div class="card">
-                    <h3>Automated Mode</h3>
-                    <p>The system captures images using a camera, processes them with a Raspberry Pi, and 
+                    <h3 class="color">Automated Mode</h3>
+                    <p class="section1">The system captures images using a camera, processes them with a Raspberry Pi, and 
                         employs deep learning algorithms to detect objects and calculate their coordinates. 
                         The robotic arm then adjusts its servo motors to interact with the identified objects based on the calculated angles.</p>
                 </div>
@@ -72,7 +73,7 @@
         </section>
         
         <section id="results" class="section">
-            <h2>Project Outcomes</h2>
+            <h2 class="heading-color">Project Outcomes</h2>
             <div class="image-gallery">
                 <img src="robotic-arm-1.jpg" alt="Mimic Control Demonstration">
                 <img src="robotic-arm-2.jpg" alt="Automated Mode in Action">
@@ -81,23 +82,32 @@
 
         <!-- Additional Sections -->
         <section id="methodology" class="section bg-light">
-            <h2>Methodology</h2>
-            <p>Our methodology combines mimic control and automated object detection to ensure accurate and efficient robotic operation.</p>
+            <h2 class="heading-color">Methodology</h2>
+            <div class="methodologyimages">
+                <div>
+                    <img src="images/flow chart.jpeg" alt="Flow chart">
+                    <p>Flow chart</p>
+                </div>
+                <div>
+                    <img src="images/block diagram ieee.jpeg" alt="Block diagram">
+                    <p>Block diagram</p>
+                </div>
+            </div>
         </section>
 
         <section id="result" class="section">
-            <h2>Result</h2>
-            <p>The system demonstrated seamless integration between manual and autonomous modes, significantly enhancing flexibility and precision.</p>
+            <h2 class="heading-color">Result</h2>
+            <p class="section1">The system demonstrated seamless integration between manual and autonomous modes, significantly enhancing flexibility and precision.</p>
         </section>
 
         <section id="summary" class="section bg-light">
-            <h2>Summary</h2>
-            <p>This dual-mode robotic arm is a groundbreaking tool designed to excel in various industrial and research applications.</p>
+            <h2 class="heading-color">Summary</h2>
+            <p class="section1">This dual-mode robotic arm is a groundbreaking tool designed to excel in various industrial and research applications.</p>
         </section>
 
         <section id="conclusion" class="section">
-            <h2>Conclusion</h2>
-            <p>In conclusion, this robotic arm project exemplifies the
+            <h2 class="heading-color">Conclusion</h2>
+            <p class="section1">In conclusion, this robotic arm project exemplifies the
                 integration of cutting-edge technologies to achieve
                 exceptional precision and functionality. By employing
                 Arduino and Raspberry Pi microcontrollers, the arm operates
