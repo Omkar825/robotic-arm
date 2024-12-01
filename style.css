@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #1c74bb;
+    background: #5F6F52;
     color: white;
     position: sticky;
     top: 0;
@@ -154,6 +154,7 @@ header {
     height: 100vh;
     background: var(--primary-blue);
     color: var(--white);
+    font-family: lucida console;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +184,7 @@ header p {
 header .btn-glow {
     padding: 12px 30px;
     font-size: 1rem;
-    color: var(--primary-blue);
+    color: #AFD198;
     background: var(--white);
     border: none;
     border-radius: 25px;
@@ -201,10 +202,16 @@ header .btn-glow:hover {
 main .section {
     padding: 60px 20px;
     text-align: center;
+    color: #AFD198;
+}
+.heading-color{
+    color: #577546;
+    font-family: lucida;
+    font-size: 4vh;
 }
 
 main .bg-light {
-    background: var(--light-gray);
+    background: #FFFFEC;
 }
 
 main h2 {
@@ -243,7 +250,7 @@ main p {
 }
 
 .card h3 {
-    color: var(--primary-blue);
+    color: #577546;
 }
 
 /* Gallery */
@@ -267,7 +274,7 @@ main p {
 
 /* Footer */
 footer {
-    background: var(--primary-blue);
+    background: #5F6F52;
     color: var(--white);
     padding: 10px 20px;
     text-align: center;
@@ -325,8 +332,11 @@ body {
 /* Hero Section */
 header {
     height: 100vh;
-    background: linear-gradient(135deg, #1e90ff, #00bfff);
-    color: white;
+    background: linear-gradient(135deg, #FFFFEC , #FFFFEC );
+    background-image: url("images/robo1.jpeg");
+    background-size: 178vh;
+    color: #31511E;
+    text-shadow: 0 0 5px #FFFFEC, 0 0 10px #FFFFEC;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,6 +345,18 @@ header {
     position: relative;
     overflow: hidden;
 }
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    pointer-events: none; /* Prevent overlay from interfering with interaction */
+  }
 
 header .hero {
     z-index: 2;
@@ -356,12 +378,12 @@ header p {
 header .btn-glow {
     padding: 12px 30px;
     font-size: 1rem;
-    color: #1e90ff;
-    background: white;
+    color: #FFFFEC;
+    background: #AFD198;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(169, 235, 143, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -374,6 +396,9 @@ header .btn-glow:hover {
 main .section {
     padding: 60px 20px;
     text-align: center;
+}
+main .section1 {
+    text-align: justify;
 }
 
 main .bg-light {
@@ -416,7 +441,9 @@ main p {
 }
 
 .card h3 {
-    color: #1e90ff;
+    color: #577546;
+    font-family: lucida;
+    font-size: 2.5vh;
 }
 
 /* Gallery */
@@ -440,7 +467,7 @@ main p {
 
 /* Footer */
 footer {
-    background: #1e90ff;
+    background: #5F6F52;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -476,4 +503,24 @@ footer a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+.methodologyimages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.methodologyimages img {
+    width: 50vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodologyimages img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
