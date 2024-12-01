@@ -333,7 +333,7 @@ body {
 header {
     height: 100vh;
     background: linear-gradient(135deg, #FFFFEC , #FFFFEC );
-    background-image: url("images/robo1.jpeg");
+    background-image: url("robo1.jpeg");
     background-size: 178vh;
     color: #31511E;
     text-shadow: 0 0 5px #FFFFEC, 0 0 10px #FFFFEC;
